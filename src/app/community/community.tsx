@@ -4,8 +4,10 @@ import './community.scss';
 
 export const community = (props) => {
     return (
-        <div className='page' >
-            <img src=''></img>
+        <div className='page' id='community' >
+            <div className='header-image'>
+                <img src='../../img/castle.jpg'></img>
+            </div>
             <h1>Community Activities</h1>
             <a target='_blank' href='https://www.meetup.com/en-AU/Melbourne-ALT-NET/'><h2>ALT.NET</h2></a>
             <h3>Organiser, Sometimes Host, Presenter</h3>
@@ -20,7 +22,6 @@ export const community = (props) => {
             <h3>Organiser, Presenter</h3>
             <p>DDD By Night is a miniconference run a few times a year. It consists of several lightning talks on all sorts of topics. Voted in by the community.</p>
 
-            
         </div>
     );
 };

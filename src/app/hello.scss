@@ -9,21 +9,26 @@
 }
 .btn {
     width: 100%;
-    background-color: #00000D;
-    color: white;
-    border-color: white;
+    background-color: whitesmoke;
+    color: black;
+    border-color: black;
     margin: 4px;
 }
 .page {
     h1 {
         text-align: center;
     }
-}
-.content-column {
-    background-color: lightgrey;
+    .header-image {
+        height: 250px;
+        vertical-align: bottom;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
 }
 .left-bar {
-    color: white;
+    padding-top: 10px;
     height: 100%;
 }
 .container-full {
@@ -31,4 +36,10 @@
     width: 100%;
     height: 100%;
     bottom: 0px;
+}
+#community {
+    display: none;
+    visibility: hidden;
+
+    transition: visibility 0s, opacity 0.5s linear;
 }
