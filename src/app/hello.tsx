@@ -28,19 +28,21 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
     return (
       <div>
         <Grid className='container-full'>
-          <Row >
+          <Row className='top-bar'>
             <Col className='left-bar row-fluid'>
               <h1 id='titlename'>{'Joshua Toth'}</h1>
               <div className='block'>
-                <button type='button' onClick={ () => this.showPage('about-me') } className='btn btn-outline-dark btn-lg'>About Me</button>
-                <button type='button' onClick={ () => this.showPage('community') } className='btn btn-outline-dark btn-lg'>Community</button>
+                <i className="fa fa-circle" aria-hidden="true" onClick={ () => this.showPage('about-me') }></i>
+                <i className="fa fa-circle" aria-hidden="true" onClick={ () => this.showPage('community') } ></i>
               </div>
+              <br/>
             </Col>
           </Row>
-          <Row>
+          <Row className='content-row'>
             <Col className='content-column'>
               <About.AboutMe />
               <Community.community />
+              <img className='content-shadow' src='../img/banner-shadow.png'></img>
             </Col>
           </Row>
         </Grid>
