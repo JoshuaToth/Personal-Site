@@ -41,7 +41,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
           <Row className='content-row'>
             <Col className='content-column'>
               <About.AboutMe />
-              <Community.community />
+              <Community.Community />
               <img className='content-shadow' src='../img/banner-shadow.png'></img>
             </Col>
           </Row>
