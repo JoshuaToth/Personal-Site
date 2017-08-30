@@ -29,12 +29,16 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
       <div>
         <Grid className='container-full'>
           <Row >
-            <Col className='left-bar' sm={3} lg={3}>
+            <Col className='left-bar row-fluid'>
               <h1 id='titlename'>{'Joshua Toth'}</h1>
-              <button type='button' onClick={ () => this.showPage('about-me') } className='btn btn-outline-dark btn-lg'>About Me <i className='fa fa-angle-right'></i></button>
-              <button type='button' onClick={ () => this.showPage('community') } className='btn btn-outline-dark btn-lg'>Community <i className='fa fa-angle-right'></i></button>
+              <div className='block'>
+                <button type='button' onClick={ () => this.showPage('about-me') } className='btn btn-outline-dark btn-lg'>About Me</button>
+                <button type='button' onClick={ () => this.showPage('community') } className='btn btn-outline-dark btn-lg'>Community</button>
+              </div>
             </Col>
-            <Col className='content-column' sm={9} lg={9}>
+          </Row>
+          <Row>
+            <Col className='content-column'>
               <About.AboutMe />
               <Community.community />
             </Col>
