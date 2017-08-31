@@ -12,6 +12,10 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
 
   currentPage = 'about-me';
 
+  scrollPage() : void {
+    window.scrollTo(0, window.innerHeight)
+  }
+
   showPage(pageTitle: string) : void {
     var el = document.getElementById(this.currentPage);
     el.style.visibility = 'hidden';
@@ -24,26 +28,31 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
     this.currentPage = pageTitle;
   }
 
+  divStyle = {
+    backgroundImage: 'url(./img/snowy.JPG)',
+  };
+  
+
   render() {
     return (
       <div>
         <Grid className='container-full'>
-          <Row className='top-bar'>
-            <Col className='left-bar row-fluid'>
-              <h1 id='titlename'>{'Joshua Toth'}</h1>
-              <div className='block'>
-                <i className="fa fa-circle" aria-hidden="true" onClick={ () => this.showPage('about-me') }></i>
-                <i className="fa fa-circle" aria-hidden="true" onClick={ () => this.showPage('community') } ></i>
+          <Row className='main-header'>
+            <div className='intro' style={this.divStyle}>
+              <div className='title-name'>
+                <h1 id='titlename'>{'Joshua Toth'}</h1>
+                <h4>{'Holistic software engineer'}</h4>
               </div>
-              <br/>
-            </Col>
+              <i className='fa fa-angle-double-down fa-6' aria-hidden='true' onClick={() => this.scrollPage()}></i>
+            </div>
           </Row>
-          <Row className='content-row'>
-            <Col className='content-column'>
+          <Row className='the-rest'>
+            <Col md={2}></Col>
+            <Col md={8}>
               <About.AboutMe />
               <Community.Community />
-              <img className='content-shadow' src='../img/banner-shadow.png'></img>
             </Col>
+            <Col md={2}></Col>
           </Row>
         </Grid>
       </div>
