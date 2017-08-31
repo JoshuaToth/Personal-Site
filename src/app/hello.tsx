@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as About from './about/about';
 import * as Community from './community/community';
+import * as Scroll from 'react-scroll';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './hello.scss';
 
@@ -14,6 +15,15 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
 
   scrollPage() : void {
     window.scrollTo(0, window.innerHeight)
+  }
+
+  scrollTo(point) : void  {
+    Scroll.scroller.scrollTo(point, 
+      {
+        duration: 700,
+        delay: 20,
+        smooth: "easeInOutQuint"
+    });
   }
 
   showPage(pageTitle: string) : void {
@@ -43,16 +53,16 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
                 <h1 id='titlename'>{'Joshua Toth'}</h1>
                 <h4>{'Holistic software engineer'}</h4>
               </div>
-              <i className='fa fa-angle-double-down fa-6' aria-hidden='true' onClick={() => this.scrollPage()}></i>
+              <i className='fa fa-angle-double-down fa-6' aria-hidden='true' onClick={() => this.scrollTo('the-rest')}></i>
             </div>
           </Row>
-          <Row className='the-rest'>
-            <Col md={2}></Col>
-            <Col md={8}>
+          <Row id='the-rest' className='the-rest'>
+            <Col md={4}></Col>
+            <Col md={4}>
               <About.AboutMe />
               <Community.Community />
             </Col>
-            <Col md={2}></Col>
+            <Col md={4}></Col>
           </Row>
         </Grid>
       </div>
