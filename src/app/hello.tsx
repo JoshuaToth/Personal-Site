@@ -1,3 +1,4 @@
+import { AboutMe } from './about/about';
 import { Article } from './components/article-content';
 import * as React from 'react';
 import * as About from './about/about';
@@ -65,11 +66,14 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
                 date={'25 May 2016'}
                 articleLocation={'https://medium.com/pageup-tech/dynamodb-and-projection-expressions-why-c08c40243195'}
               />
-              <Article 
+              {/* <Article 
                 title={'About Me'} 
                 tldr={'I describe myself and the community organisations I\'m part of'}
                 date={'Updated 2 September 2017'}
-              />
+              /> */}
+              <br/>
+              <br/>
+              <AboutMe />
             </Col>
             <Col md={3}></Col>
           </Row>
