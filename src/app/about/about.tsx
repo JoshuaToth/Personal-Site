@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap';
 import * as ReactMarkdown from 'react-markdown';
 
 import './about.scss';
-declare function require(name:string);
+declare function require(name: string);
 
 var content = ` # About me
 I'm a Full Stack Software Developer working in Melbourne. 

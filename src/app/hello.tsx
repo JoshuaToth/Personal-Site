@@ -1,3 +1,4 @@
+import { Article } from './components/article-content';
 import * as React from 'react';
 import * as About from './about/about';
 import * as Community from './community/community';
@@ -13,16 +14,20 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
 
   currentPage = 'about-me';
 
+  divStyle = {
+    backgroundImage: 'url(./img/docklands.jpg)'
+  };
+
   scrollPage() : void {
-    window.scrollTo(0, window.innerHeight)
+    window.scrollTo(0, window.innerHeight);
   }
 
-  scrollTo(point) : void  {
-    Scroll.scroller.scrollTo(point, 
+  scrollTo(point: string) : void  {
+    Scroll.scroller.scrollTo(point,
       {
         duration: 700,
         delay: 20,
-        smooth: "easeInOutQuint"
+        smooth: 'easeInOutQuint'
     });
   }
 
@@ -38,11 +43,6 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
     this.currentPage = pageTitle;
   }
 
-  divStyle = {
-    backgroundImage: 'url(./img/snowy.JPG)',
-  };
-  
-
   render() {
     return (
       <div>
@@ -57,12 +57,21 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             </div>
           </Row>
           <Row id='the-rest' className='the-rest'>
-            <Col md={4}></Col>
-            <Col md={4}>
-              <About.AboutMe />
-              <Community.Community />
+            <Col md={3}></Col>
+            <Col md={6}>
+              <Article 
+                title={'DynamoDB and Projection Expressions — Why?'} 
+                tldr={'While modifying one of our API endpoints, I realised the need for another (endpoint) to read from DynamoDB. I deep dive into projection expressions'}
+                date={'25 May 2016'}
+                articleLocation={'https://medium.com/pageup-tech/dynamodb-and-projection-expressions-why-c08c40243195'}
+              />
+              <Article 
+                title={'About Me'} 
+                tldr={'I describe myself and the community organisations I\'m part of'}
+                date={'Updated 2 September 2017'}
+              />
             </Col>
-            <Col md={4}></Col>
+            <Col md={3}></Col>
           </Row>
         </Grid>
       </div>
