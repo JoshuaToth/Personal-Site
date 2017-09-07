@@ -1,7 +1,5 @@
-import { AboutMe } from './about/about';
 import { ArticleContent } from './components/article-content';
 import * as React from 'react';
-import * as About from './about/about';
 import * as Scroll from 'react-scroll';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './hello.scss';
@@ -52,6 +50,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
               <div className='title-name'>
                 <h1 id='titlename'>{'Joshua Toth'}</h1>
                 <h4>{'Holistic software engineer'}</h4>
+                <a target='blank' href='https://www.twitter.com/tothjoshuaj'><i className='fa fa-twitter fa-5'></i></a>
               </div>
               <i className='fa fa-angle-double-down fa-6' aria-hidden='true' onClick={() => this.scrollTo('the-rest')}></i>
             </div>

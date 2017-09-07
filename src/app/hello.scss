@@ -34,7 +34,6 @@
     overflow: hidden;
     background: #222 no-repeat center center;
     background-size: auto 150%;
-    
 }
 .title-name {
     background-color:white;
@@ -47,6 +46,12 @@
     max-width: 520px;
     width: 70%;
     animation: 2s ease-out 0s 1 appearLater;
+
+    a {
+        text-decoration: none !important;
+        color: black;
+        opacity: 0.8;
+    }
 }
 .fa-6 {
     font-size: 4em;
