@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, Button } from 'react-bootstrap';
 import * as ReactMarkdown from 'react-markdown';
 
 import './article.scss';
@@ -7,7 +7,7 @@ import './article.scss';
 export const ArticleHeader = (props) => {
     return (
         <div className='article-header' style={ props.background }>
-            {/* <img src={props.img}/> */}
+            <Button className='back btn btn-outline-secondary' href='../'>Back</Button>
         </div>
     );
 };
