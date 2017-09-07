@@ -2,7 +2,6 @@ import { AboutMe } from './about/about';
 import { Article } from './components/article-content';
 import * as React from 'react';
 import * as About from './about/about';
-import * as Community from './community/community';
 import * as Scroll from 'react-scroll';
 import { Grid, Row, Col } from 'react-bootstrap';
 import './hello.scss';
@@ -47,7 +46,6 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
   render() {
     return (
       <div>
-        <Grid className='container-full'>
           <Row className='main-header'>
             <div className='intro' style={this.divStyle}>
               <div className='title-name'>
@@ -77,7 +75,6 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             </Col>
             <Col md={3}></Col>
           </Row>
-        </Grid>
       </div>
     );
   }
