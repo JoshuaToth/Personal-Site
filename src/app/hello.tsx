@@ -46,6 +46,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
   render() {
     return (
       <div>
+        <Grid className='container-full'>
           <Row className='main-header'>
             <div className='intro' style={this.divStyle}>
               <div className='title-name'>
@@ -75,6 +76,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             </Col>
             <Col md={3}></Col>
           </Row>
+        </Grid>
       </div>
     );
   }
