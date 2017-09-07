@@ -23,10 +23,14 @@ DDD Melbourne is a non profit community event run by developers for developers. 
 #### Organiser, Presenter
 DDD By Night is a miniconference run a few times a year. It consists of several lightning talks on all sorts of topics. Voted in by the community.`;
 
+const divStyle = {
+    backgroundImage: 'url(./img/docklands.jpg)'
+  };
+
 export const AboutMe = (props) => {
     return (
         <div className='about-article'>
-            <Article content={content} headerImage='../img/docklands.jpg'/>
+            <Article content={content} background={divStyle} headerImage='../img/docklands.jpg'/>
         </div>
     );
 };

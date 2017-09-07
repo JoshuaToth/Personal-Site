@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { Col } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
 import * as ReactMarkdown from 'react-markdown';
 
 import './article.scss';
 
 export const ArticleHeader = (props) => {
     return (
-        <div className='article-header'>
-            <img src={props.headerImage}/>
+        <div className='article-header' style={ props.background }>
+            {/* <img src={props.img}/> */}
         </div>
     );
 };
@@ -15,15 +15,23 @@ export const ArticleHeader = (props) => {
 export const ArticleBody = (props) => {
     return (
         <div className='article-body'>
-            <ReactMarkdown source={props.content}/>
+            <Grid>
+                <Row>
+                    <Col md={1}/>
+                    <Col md={10}>
+                        <ReactMarkdown source={props.content}/>
+                    </Col>
+                    <Col md={1}/>
+                </Row>
+            </Grid>
         </div>
     );
 };
 
 export const Article = (props) => {
     return (
-        <div className='page' id='about-me'>
-            <ArticleHeader img={props.headerImage}/>
+        <div className='article' id='about-me'>
+            <ArticleHeader img={props.headerImage} background={props.background}/>
             <ArticleBody content={props.content}/>
         </div>
     );

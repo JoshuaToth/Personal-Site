@@ -28,9 +28,9 @@ export const PostDate = (props) => {
     );
 };
 
-export const Article = (props) => {
+export const ArticleContent = (props) => {
     return (
-        <div className='article'>
+        <div className='article-content'>
             <a href={props.articleLocation}><Title {...props}/></a>
             <Tldr {...props}/>
             <PostDate {...props}/>
