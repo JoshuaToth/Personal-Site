@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Col } from 'react-bootstrap';
-import { Article }  from '../components/article'
+import { Article }  from '../components/article';
 
 import './about.scss';
 declare function require(name: string);

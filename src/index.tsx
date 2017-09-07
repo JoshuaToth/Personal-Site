@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import {Router, Route, browserHistory} from 'react-router';
 
 import {Hello} from './app/hello';
-import {AboutMe} from './app/articles/about'
+import {AboutMe} from './app/articles/about';
 
 import './index.scss';
 

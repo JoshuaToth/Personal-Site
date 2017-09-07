@@ -59,14 +59,14 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
           <Row id='the-rest' className='the-rest'>
             <Col md={3}></Col>
             <Col md={6}>
-              <Article 
-                title={'DynamoDB and Projection Expressions — Why?'} 
+              <Article
+                title={'DynamoDB and Projection Expressions — Why?'}
                 tldr={'While modifying one of our API endpoints, I realised the need for another (endpoint) to read from DynamoDB. I deep dive into projection expressions'}
                 date={'25 May 2016'}
                 articleLocation={'https://medium.com/pageup-tech/dynamodb-and-projection-expressions-why-c08c40243195'}
               />
-              {/* <Article 
-                title={'About Me'} 
+              {/* <Article
+                title={'About Me'}
                 tldr={'I describe myself and the community organisations I\'m part of'}
                 date={'Updated 2 September 2017'}
               /> */}

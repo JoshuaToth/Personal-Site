@@ -4,6 +4,22 @@ import * as ReactMarkdown from 'react-markdown';
 
 import './article.scss';
 
+export const ArticleHeader = (props) => {
+    return (
+        <div className='article-header'>
+            <img src={props.headerImage}/>
+        </div>
+    );
+};
+
+export const ArticleBody = (props) => {
+    return (
+        <div className='article-body'>
+            <ReactMarkdown source={props.content}/>
+        </div>
+    );
+};
+
 export const Article = (props) => {
     return (
         <div className='page' id='about-me'>
@@ -12,18 +28,3 @@ export const Article = (props) => {
         </div>
     );
 };
-
-export const ArticleHeader = (props) => {
-    return (
-        <div className='article-header'>
-            <img src={props.headerImage}/>
-        </div>
-    );
-}
-export const ArticleBody= (props) => {
-    return (
-        <div className='article-body'>
-            <ReactMarkdown source={props.content}/>
-        </div>
-    );
-}
