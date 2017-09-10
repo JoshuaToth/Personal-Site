@@ -13,7 +13,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
   currentPage = 'about-me';
 
   divStyle = {
-    backgroundImage: 'url(./img/docklands.jpg)'
+    backgroundImage: 'url(./img/docklands-small.jpg)'
   };
 
   scrollPage() : void {
@@ -51,6 +51,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
                 <h1 id='titlename'>{'Joshua Toth'}</h1>
                 <h4>{'Holistic software engineer'}</h4>
                 <a target='blank' href='https://www.twitter.com/tothjoshuaj'><i className='fa fa-twitter fa-5'></i></a>
+                <a target='blank' href='https://www.linkedin.com/in/joshua-toth-aab7b8b0/'><i className='fa fa-linkedin fa-5'></i></a>
               </div>
               <i className='fa fa-angle-double-down fa-6' aria-hidden='true' onClick={() => this.scrollTo('the-rest')}></i>
             </div>
