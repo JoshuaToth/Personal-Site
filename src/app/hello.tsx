@@ -89,7 +89,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <Col md={3}></Col>
           </Row>
         </Grid>
-        <p className='footer'><b>Joshua Toth</b> © 2017</p>
+        <p className='footer'><b>Joshua Toth</b> © 2017. info@joshuatoth.com</p>
       </div>
     );
   }
