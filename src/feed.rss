@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Joshua Toth</title>
+    <link>https://joshuatoth.com</link>
+    <description>My personal site</description>
+    <item>
+       <title>Creating own website part 1: The build and design of the site.</title>
+       <link>http://example.com/byo-site-1</link>
+       <description>I decided it was time for me to build my own website and publish it to my own domain. I think it’s something that every developer should try.</description>
+    </item>
+  </channel>
+</rss>

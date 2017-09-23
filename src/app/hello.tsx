@@ -53,8 +53,10 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
                 <a target='blank' href='https://www.twitter.com/tothjoshuaj'><i className='fa fa-twitter fa-5'></i></a>
                 <a target='blank' href='https://github.com/JoshuaToth'><i className='fa fa-github fa-5'></i></a>
                 <a target='blank' href='https://www.linkedin.com/in/joshua-toth-aab7b8b0/'><i className='fa fa-linkedin fa-5'></i></a>
+                <a itemType="application/rss+xml" href="http://feeds.feedburner.com/JoshuaToth"><i className='fa fa-rss fa-5'></i></a>
               </div>
               <i className='fa fa-angle-double-down fa-6' aria-hidden='true' onClick={() => this.scrollTo('the-rest')}></i>
+              
             </div>
           </Row>
           <Row id='the-rest' className='the-rest'>
