@@ -61,6 +61,12 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <Col md={3}></Col>
             <Col md={6}>
               <ArticleContent
+                title={'Creating own website part 1: The build and design of the site'}
+                tldr={'I decided it was time for me to build my own website and publish it to my own domain. I think it’s something that every developer should try.'}
+                date={'21st September 2017'}
+                articleLocation={'./byo-site-1'}
+              />
+              <ArticleContent
                 title={'DynamoDB and Projection Expressions — Why?'}
                 tldr={'While modifying one of our API endpoints, I realised the need for another (endpoint) to read from DynamoDB. I deep dive into projection expressions'}
                 date={'25 May 2016'}
