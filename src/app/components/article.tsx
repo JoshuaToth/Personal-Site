@@ -33,6 +33,7 @@ export const Article = (props) => {
         <div className='article' id='about-me'>
             <ArticleHeader img={props.headerImage} background={props.background}/>
             <ArticleBody content={props.content}/>
+            <p className='footer'><b>Joshua Toth</b> © 2017</p>
         </div>
     );
 };

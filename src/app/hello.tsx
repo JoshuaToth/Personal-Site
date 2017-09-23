@@ -53,7 +53,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
                 <a target='blank' href='https://www.twitter.com/tothjoshuaj'><i className='fa fa-twitter fa-5'></i></a>
                 <a target='blank' href='https://github.com/JoshuaToth'><i className='fa fa-github fa-5'></i></a>
                 <a target='blank' href='https://www.linkedin.com/in/joshua-toth-aab7b8b0/'><i className='fa fa-linkedin fa-5'></i></a>
-                <a itemType="application/rss+xml" href="http://feeds.feedburner.com/JoshuaToth"><i className='fa fa-rss fa-5'></i></a>
+                <a itemType='application/rss+xml' href='http://feeds.feedburner.com/JoshuaToth'><i className='fa fa-rss fa-5'></i></a>
               </div>
               <i className='fa fa-angle-double-down fa-6' aria-hidden='true' onClick={() => this.scrollTo('the-rest')}></i>
               
@@ -62,6 +62,12 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
           <Row id='the-rest' className='the-rest'>
             <Col md={3}></Col>
             <Col md={6}>
+              <ArticleContent
+                title={'Creating own website part 2: Setting up a static website with AWS'}
+                tldr={`The way I host this website is via AWS. It’s pretty cheap to host and can be set up for free.`}
+                date={'23rd September 2017'}
+                articleLocation={'./byo-site-2'}
+              />
               <ArticleContent
                 title={'Creating own website part 1: The build and design of the site'}
                 tldr={'I decided it was time for me to build my own website and publish it to my own domain. I think it’s something that every developer should try.'}
@@ -83,6 +89,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <Col md={3}></Col>
           </Row>
         </Grid>
+        <p className='footer'><b>Joshua Toth</b> © 2017</p>
       </div>
     );
   }
