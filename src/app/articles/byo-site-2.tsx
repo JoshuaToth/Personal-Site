@@ -6,7 +6,7 @@ import './about.scss';
 declare function require(name: string);
 
 var content = `
-# Creating own website part 2: Setting up a static website with AWS
+# Creating your own website part 2: Setting up a static website with AWS
 The way I host this website is via AWS. 
 It’s pretty cheap to host and can be set up for free. 
 ## Step one

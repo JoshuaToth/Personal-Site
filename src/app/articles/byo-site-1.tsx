@@ -5,7 +5,7 @@ import { Article }  from '../components/article';
 import './about.scss';
 declare function require(name: string);
 
-var content = ` # Creating own website part 1: The build and design of the site.
+var content = ` # Creating your own website part 1: The build and design of the site.
 I decided it was time for me to build my own website and publish it to my own domain. I think it’s something that every developer should try.
 ### I wanted to use the site as both a self promotion site and somewhere to host my blog posts. 
 This post is to show that you dont just draw the rest of the owl, website design can be an iterative and experimental process
