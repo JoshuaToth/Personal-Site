@@ -63,6 +63,12 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <Col md={3}></Col>
             <Col md={6}>
               <ArticleContent
+                title={'React router with Cloudfront and S3'}
+                tldr={`React router isn't automatically supported with S3 + Cloudfront. This is how you can make it work.`}
+                date={'26th September 2017'}
+                articleLocation={'./react-router-fix'}
+              />
+              <ArticleContent
                 title={'Creating your own website part 2: Setting up a static website with AWS'}
                 tldr={`The way I host this website is via AWS. It’s pretty cheap to host and can be set up for free.`}
                 date={'23rd September 2017'}

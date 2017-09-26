@@ -5,6 +5,11 @@
     <link>https://joshuatoth.com</link>
     <description>My personal site</description>
     <item>
+       <title>React router with Cloudfront and S3</title>
+       <link>https://joshuatoth.com/react-router-fix</link>
+       <description>React router isn't automatically supported with S3 + Cloudfront. This is how you can make it work.</description>
+    </item>
+    <item>
        <title>Creating your own website part 2: Setting up a static website with AWS</title>
        <link>https://joshuatoth.com/byo-site-2</link>
        <description>The way I host this website is via AWS. It’s pretty cheap to host and can be set up for free.</description>
