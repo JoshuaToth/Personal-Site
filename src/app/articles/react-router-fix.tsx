@@ -34,9 +34,9 @@ We now have a rule that will load in the /index.html triggering react to respond
 `;
 
 const divStyle = {
-    backgroundImage: 'url(./img/rrfix/rrfixheader.png)'
+    backgroundImage: 'url(./img/rrfix/hot-air.jpeg)'
   };
-
+// image obtained and licenced for free from https://static.pexels.com/photos/210012/pexels-photo-210012.jpeg
 export const ReactRouterFix = (props) => {
     return (
         <div className='react-router-fix-article'>
