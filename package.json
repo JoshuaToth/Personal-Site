@@ -1,6 +1,6 @@
 {
   "author": "Joshua Toth",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "dependencies": {
     "react": "^15.4.2",
     "react-bootstrap": "^0.31.2",
