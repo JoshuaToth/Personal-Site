@@ -5,6 +5,11 @@
     <link>https://joshuatoth.com</link>
     <description>My personal site</description>
     <item>
+       <title>Creating your own website part 3: Using https with AWS and Cloudfront.</title>
+       <link>https://joshuatoth.com/byo-site-2</link>
+       <description>There is no reason NOT to be using HTTPS. So add it.</description>
+    </item>
+    <item>
        <title>IIS 10 Windows Fall Creators Update (1709): Cannot read \\?\ configuration file</title>
        <link>https://joshuatoth.com/windows-iis</link>
        <description>So you've installed Windows update 1709 and now your IIS hosted website isn't working?</description>
