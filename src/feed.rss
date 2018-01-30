@@ -5,8 +5,13 @@
     <link>https://joshuatoth.com</link>
     <description>My personal site</description>
     <item>
+       <title>Creating your own website part 4: Adding Travis deployment</title>
+       <link>https://joshuatoth.com/byo-site-4</link>
+       <description>Now you have your site setup and you want those updates to flow out asap.</description>
+    </item>
+    <item>
        <title>Creating your own website part 3: Using https with AWS and Cloudfront.</title>
-       <link>https://joshuatoth.com/byo-site-2</link>
+       <link>https://joshuatoth.com/byo-site-3</link>
        <description>There is no reason NOT to be using HTTPS. So add it.</description>
     </item>
     <item>

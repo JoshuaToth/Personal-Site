@@ -63,6 +63,12 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <Col md={3}></Col>
             <Col md={6}>
               <ArticleContent
+                title={'Creating your own website part 4: Adding Travis deployment'}
+                tldr={`Now you have your site setup and you want those updates to flow out asap.`}
+                date={'13th December 2017'}
+                articleLocation={'./byo-site-4'}
+              />
+              <ArticleContent
                 title={'Creating your own website part 3: Using https with AWS and Cloudfront'}
                 tldr={`There is no reason NOT to be using HTTPS. So add it.`}
                 date={'13th November 2017'}
