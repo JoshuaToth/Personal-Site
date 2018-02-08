@@ -63,6 +63,12 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <Col md={3}></Col>
             <Col md={6}>
               <ArticleContent
+                title={'Breaking apart Monoliths: 4 Issues with scheduled deployments'}
+                tldr={`For the last few years I’ve been on a journey of breaking down a monolith application. A common occurrence with monolithic and legacy applications are a painfully slow release cycle.`}
+                date={'8th February 2018'}
+                articleLocation={'https://medium.com/@tothjoshuaj/breaking-apart-monoliths-4-issues-with-scheduled-deployments-8f67c7bbafb3'}
+              />
+              <ArticleContent
                 title={'Creating your own website part 4: Adding Travis deployment'}
                 tldr={`Now you have your site setup and you want those updates to flow out asap.`}
                 date={'13th December 2017'}
