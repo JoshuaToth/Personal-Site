@@ -5,6 +5,10 @@
     <link>https://joshuatoth.com</link>
     <description>My personal site</description>
     <item>
+       <title>Breaking apart your Monolith: Free your Front-end</title>
+       <link>https://medium.com/@tothjoshuaj/breaking-apart-your-monolith-free-your-front-end-1d23876e4588</link>
+       <description>Breaking apart a monolith is something that takes a while… a long while. There are a few things that while not reducing code, can have a pretty large impact on the overall agility of your product development.</description>
+    </item>
        <title>Breaking apart Monoliths: 4 Issues with scheduled deployments</title>
        <link>https://medium.com/@tothjoshuaj/breaking-apart-monoliths-4-issues-with-scheduled-deployments-8f67c7bbafb3</link>
        <description>For the last few years I’ve been on a journey of breaking down a monolith application. A common occurrence with monolithic and legacy applications are a painfully slow release cycle.</description>

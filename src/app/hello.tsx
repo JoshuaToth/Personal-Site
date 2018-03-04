@@ -63,7 +63,13 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <Col md={3}></Col>
             <Col md={6}>
               <ArticleContent
-                title={'Breaking apart Monoliths: 4 Issues with scheduled deployments'}
+                title={'Breaking apart your Monolith: Free your Front-end'}
+                tldr={`Breaking apart a monolith is something that takes a while… a long while. There are a few things that while not reducing code, can have a pretty large impact on the overall agility of your product development.`}
+                date={'5th March 2018'}
+                articleLocation={'https://medium.com/@tothjoshuaj/breaking-apart-your-monolith-free-your-front-end-1d23876e4588'}
+              />
+              <ArticleContent
+                title={'Breaking apart your Monolith: 4 Issues with scheduled deployments'}
                 tldr={`For the last few years I’ve been on a journey of breaking down a monolith application. A common occurrence with monolithic and legacy applications are a painfully slow release cycle.`}
                 date={'8th February 2018'}
                 articleLocation={'https://medium.com/@tothjoshuaj/breaking-apart-monoliths-4-issues-with-scheduled-deployments-8f67c7bbafb3'}
