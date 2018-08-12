@@ -5,6 +5,21 @@
     <link>https://joshuatoth.com</link>
     <description>My personal site</description>
     <item>
+       <title>A first look into React Native</title>
+       <link>https://medium.com/@tothjoshuaj/a-first-look-into-react-native-10583925e7d1</link>
+       <description>Why did I try React Native? I’ve been toying with an app idea and wanted to give app development another shot.</description>
+    </item>
+    <item>
+       <title>Windows: Use PuTTY for git SSH (Or any SSH agent)</title>
+       <link>https://medium.com/@tothjoshuaj/windows-use-putty-for-git-ssh-or-any-ssh-agent-9929b578cf44</link>
+       <description>Something that seems to come up a lot when using git on windows is wanting to use an SSH client to manage keys. When you want to use something like PuTTY its a fairly simple, but somewhat hidden process.</description>
+    </item>
+    <item>
+       <title>Git extensions: Show commit date instead of author date</title>
+       <link>https://medium.com/@tothjoshuaj/git-extensions-show-commit-date-instead-of-author-date-75b4d8b0a022</link>
+       <description>Git extensions has an annoying default setting of showing when a commit was authored, rather than when it was committed to the repository…</description>
+    </item>
+    <item>
        <title>Breaking apart your Monolith: Free your Front-end</title>
        <link>https://medium.com/@tothjoshuaj/breaking-apart-your-monolith-free-your-front-end-1d23876e4588</link>
        <description>Breaking apart a monolith is something that takes a while… a long while. There are a few things that while not reducing code, can have a pretty large impact on the overall agility of your product development.</description>

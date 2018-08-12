@@ -63,6 +63,24 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <Col md={3}></Col>
             <Col md={6}>
               <ArticleContent
+                title={'A first look into React Native'}
+                tldr={`Why did I try React Native? I’ve been toying with an app idea and wanted to give app development another shot.`}
+                date={'15th April 2018'}
+                articleLocation={'https://medium.com/@tothjoshuaj/a-first-look-into-react-native-10583925e7d1'}
+              />
+              <ArticleContent
+                title={'Windows: Use PuTTY for git SSH (Or any SSH agent)'}
+                tldr={`Something that seems to come up a lot when using git on windows is wanting to use an SSH client to manage keys. When you want to use something like PuTTY its a fairly simple, but somewhat hidden process.`}
+                date={'6th March 2018'}
+                articleLocation={'https://medium.com/@tothjoshuaj/windows-use-putty-for-git-ssh-or-any-ssh-agent-9929b578cf44'}
+              />
+              <ArticleContent
+                title={'Git extensions: Show commit date instead of author date'}
+                tldr={`Git extensions has an annoying default setting of showing when a commit was authored, rather than when it was committed to the repository…`}
+                date={'5th March 2018'}
+                articleLocation={'https://medium.com/@tothjoshuaj/git-extensions-show-commit-date-instead-of-author-date-75b4d8b0a022'}
+              />
+              <ArticleContent
                 title={'Breaking apart your Monolith: Free your Front-end'}
                 tldr={`Breaking apart a monolith is something that takes a while… a long while. There are a few things that while not reducing code, can have a pretty large impact on the overall agility of your product development.`}
                 date={'5th March 2018'}
