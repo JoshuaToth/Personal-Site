@@ -110,7 +110,7 @@ Congratulations! You now have CI/CD within your site, no more zip, drag and drop
 const divStyle = {
     backgroundImage: 'url(./img/byo4/train.png)'
   };
-  
+
 export const ByoSite4 = (props) => {
     return (
         <div className='byo-site-4-article'>

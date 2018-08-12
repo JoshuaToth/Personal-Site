@@ -13,7 +13,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
   currentPage = 'about-me';
 
   divStyle = {
-    backgroundImage: 'url(./img/docklands-small.jpg)'
+    backgroundImage: 'url(./img/pexels-photo-851555.jpeg)'
   };
 
   scrollPage() : void {

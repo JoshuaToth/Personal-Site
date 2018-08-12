@@ -45,7 +45,7 @@ And you're done! Enjoy you little padlock and a nice search ratings boost!
 const divStyle = {
     backgroundImage: 'url(./img/byo3/door-green-closed-lock.jpg)'
   };
-// Image taken for free from https://static.pexels.com/photos/4291/door-green-closed-lock.jpg
+// image taken for free from https://static.pexels.com/photos/4291/door-green-closed-lock.jpg
 export const ByoSite3 = (props) => {
     return (
         <div className='byo-site-3-article'>
