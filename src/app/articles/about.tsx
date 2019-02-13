@@ -6,11 +6,13 @@ import './about.scss';
 declare function require(name: string);
 
 var content = ` # About me
-Full stack Polyglot Software Developer.
+Full stack Polyglot Software Developer. Currently living in London, UK.
 
 Continual self-improvement by exploration of new technologies. (Web, DevOps, Database, Language, etc)
 
 Huge community advocate, member and participant of several community organisations.
+
+Specialties: Software Architecture, Serverless/Lambda, Node.js, Microservices, Frontend Javascript development (React, Angular, Vanilla), Terraform, working with and breaking apart monolith systems, influencing company culture, distributed systems, .NET development (Core and standard), Cloud, DevOps practices.
 
 Innovator for software providing practical solutions for real business needs. 
 
@@ -20,10 +22,6 @@ I believe my most valuable assets as a software developer include:
 - The ability to empower any team I’m part of.
 - The ability to rise to the challenge and fit into any position needed.
 - Quick uptake on technologies and development environments & ecosystems. 
-
-Experienced in breaking down monoliths and moving from local to distributed systems. 
-
-Specialties: Software Architecture, Microservices, working with and breaking apart monolith systems, influencing company culture, distributed systems, Cloud, DevOps practices, Javascript development and .NET development. 
 
 # Community Activities
 ### [ALT.NET](https://www.meetup.com/en-AU/Melbourne-ALT-NET/)

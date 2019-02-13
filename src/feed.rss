@@ -5,6 +5,11 @@
     <link>https://joshuatoth.com</link>
     <description>My personal site</description>
     <item>
+       <title>A Node.js, AWS native, Serverless, IoT, FinTech project.</title>
+       <link>https://medium.com/@tothjoshuaj/a-node-js-serverless-iot-fintech-project-surely-its-not-possible-55a1aaa380da</link>
+       <description>In August last year I had the opportunity to work on a greenfield project within the financial sector. The pitch to me was: An AWS native, Node.js, serverless, event-driven system to back up an IOT device capable of real time messaging and events. I was very intrigued.</description>
+    </item>
+    <item>
        <title>A first look into React Native</title>
        <link>https://medium.com/@tothjoshuaj/a-first-look-into-react-native-10583925e7d1</link>
        <description>Why did I try React Native? I’ve been toying with an app idea and wanted to give app development another shot.</description>

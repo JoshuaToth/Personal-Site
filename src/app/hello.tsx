@@ -49,7 +49,7 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
             <div className='intro' style={this.divStyle}>
               <div className='title-name'>
                 <h1 id='titlename'>{'Joshua Toth'}</h1>
-                <h4>{'Holistic software engineer'}</h4>
+                <h4>{'Tech Lead, AWS specialist, Node.js and Serverless Developer'}</h4>
                 <a target='blank' href='https://www.twitter.com/tothjoshuaj'><i className='fa fa-twitter fa-5'></i></a>
                 <a target='blank' href='https://github.com/JoshuaToth'><i className='fa fa-github fa-5'></i></a>
                 <a target='blank' href='https://www.linkedin.com/in/joshua-toth-aab7b8b0/'><i className='fa fa-linkedin fa-5'></i></a>
@@ -62,6 +62,12 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
           <Row id='the-rest' className='the-rest'>
             <Col md={3}></Col>
             <Col md={6}>
+              <ArticleContent
+                title={'A Node.js, AWS native, Serverless, IoT, FinTech project.'}
+                tldr={`In August last year I had the opportunity to work on a greenfield project within the financial sector. The pitch to me was: An AWS native, Node.js, serverless, event-driven system to back up an IOT device capable of real time messaging and events. I was very intrigued.`}
+                date={'10th February 2019'}
+                articleLocation={'https://medium.com/@tothjoshuaj/a-node-js-serverless-iot-fintech-project-surely-its-not-possible-55a1aaa380da'}
+              />
               <ArticleContent
                 title={'A first look into React Native'}
                 tldr={`Why did I try React Native? I’ve been toying with an app idea and wanted to give app development another shot.`}
@@ -142,14 +148,14 @@ export class Hello extends React.Component<IHelloProps, IHelloState> {
               />
               <ArticleContent
                 title={'About Me'}
-                date={'Updated 2 September 2017'}
+                date={'Updated 13th February 2019'}
                 articleLocation={'./about'}
               />
             </Col>
             <Col md={3}></Col>
           </Row>
         </Grid>
-        <p className='footer'><b>Joshua Toth</b> © 2017. info@joshuatoth.com</p>
+        <p className='footer'><b>Joshua Toth</b> © 2019. info@joshuatoth.com</p>
       </div>
     );
   }
