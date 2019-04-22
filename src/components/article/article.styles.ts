@@ -1,0 +1,133 @@
+import styled from '@emotion/styled'
+import { colours, textStyles } from "../../styles/global-layout"
+
+export const OuterLayout = styled.div`
+  width: 100%;
+  background-color: ${colours.backgroundBlack};
+  min-height: 835px;
+  position: relative;
+`;
+
+export const ArticleControls = styled.div`
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 700px;
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+`;
+
+export const ChevronWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+  z-index: 1000;
+  color: ${colours.iconGrey};
+  > svg {
+    width: 24px;
+  }
+`;
+
+
+export const Articles = styled.div`
+  justify-content: center;
+  position: relative;
+  height: 700px;
+  width: 750px;
+  user-select: none;
+`;
+
+export const ArticleWrapperAnchor = styled.a`
+  text-decoration: none;
+`;
+
+export const ArticleWrapperDiv = styled.div`
+  position: absolute;
+  left:  ${(props: any): string => { return `${37 + props.focusLevel * 20}` }}%;
+  width: 418px;
+  height: ${(props: any): string => props.background ? '528px' : '568px'};
+  overflow: hidden; 
+  z-index: ${(props: any): string => { return `${100 - Math.abs(props.zLevel) * 10}` }};
+  margin-right: -130px;
+  margin-left: -130px;
+  top: ${(props: any): string => props.background ? '68px' : '48px'};
+  box-shadow: 2px 2px 12px 2px rgba(0,0,0,0.82);
+  transition: all 0.2s ease-out;
+`;
+
+export const ArticleCover  = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 4px;
+  z-index: 99;
+`;
+
+export const ArticleCard = styled.div`
+  width: 418px;
+  height: 568px;
+  border-radius: 4px;
+  background-color: ${colours.textWhite};
+  overflow: hidden;
+`;
+
+export const SplashImage = styled.div`
+  width: 418px;
+  height: 281px;
+`;
+
+export const ArticleDescription = styled.div`
+  width: 362px;
+  height: 233px;
+  background-color: ${colours.textWhite};
+  padding: ${(props: any): string => props.background 
+  ? '10px 28px 10px 28px' 
+  : '28px 28px 20px 28px'};
+  position: relative;
+  transition: all 0.2s ease;
+`;
+
+export const ArticleTitle = styled.p`
+  ${textStyles.blackArticleHeader}
+  margin-top: 0px;
+  margin-bottom: 14px;
+  max-height: 84px;
+`;
+
+export const ArticleBlurb = styled.p`
+  ${textStyles.greyArticleSubtitle}
+  height: 63px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0px;
+`;
+
+export const LinkButtonWrapper = styled.div`
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 28px;
+  align-items: center;
+  justify-content: center;
+  width: 214px;
+  height: 44px;
+  border-radius: 12px;
+  border: solid 2px ${colours.darkBlue};
+  cursor: pointer;
+  > p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: ${colours.darkBlue};
+    > svg {
+      margin-left: 8px;
+      height: 12px;
+      width: 13px;
+    }
+  }
+`;
