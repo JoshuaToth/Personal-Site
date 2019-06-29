@@ -1,13 +1,21 @@
-import React, { Component } from 'react';
-import { BorderUnderline, FirstWord, InnerLayout, SecondWord } from '../../styles/global-layout';
-import ContactTile from './contact-tile';
-import { ContactWrapper, Copyright, OuterLayout } from './footer.styles';
-// import { Link } from "gatsby"
+import React, { Component } from 'react'
+import {
+  BorderUnderline,
+  FirstWord,
+  InnerLayout,
+  SecondWord,
+} from '../../styles/global-layout'
+import ContactTile from './contact-tile'
+import { ContactWrapper, Copyright, OuterLayout } from './footer.styles'
 
-const Twitter = require('../../icons/twitter-brands.svg');
-const Medium = require('../../icons/medium-brands.svg');
-const Github = require('../../icons/github-brands.svg');
-const Email = require('../../icons/envelope-solid.svg');
+// tslint:disable-next-line: no-var-requires
+const Twitter = require('../../icons/twitter-brands.svg')
+// tslint:disable-next-line: no-var-requires
+const Medium = require('../../icons/medium-brands.svg')
+// tslint:disable-next-line: no-var-requires
+const Github = require('../../icons/github-brands.svg')
+// tslint:disable-next-line: no-var-requires
+const Email = require('../../icons/envelope-solid.svg')
 
 export default class Footer extends Component<any> {
   public render(): React.ReactNode {
@@ -15,7 +23,7 @@ export default class Footer extends Component<any> {
       <OuterLayout>
         <InnerLayout>
           <FirstWord>Contact</FirstWord>
-          <BorderUnderline/>
+          <BorderUnderline />
           <ContactWrapper>
             <ContactTile
               icon={Email}
@@ -41,6 +49,6 @@ export default class Footer extends Component<any> {
           <Copyright>Copyright 2019 Joshua Toth</Copyright>
         </InnerLayout>
       </OuterLayout>
-    );
+    )
   }
 }

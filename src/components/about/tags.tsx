@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { TagsCollection, TagsSection } from './about.styles';
-import { Size, SkillTag } from './tag';
+import React, { Component } from 'react'
+import { TagsCollection, TagsSection } from './about.styles'
+import { Size, SkillTag } from './tag'
 // import { Link } from "gatsby"
 
 
@@ -23,6 +23,6 @@ export default class Tags extends Component<any> {
           {SkillTag('Docker')}
         </TagsCollection>
       </TagsSection>
-    );
+    )
   }
 }

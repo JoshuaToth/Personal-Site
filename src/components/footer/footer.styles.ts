@@ -1,12 +1,12 @@
-import { css } from '@emotion/core';
-import styled from '@emotion/styled';
-import { colours, textStyles } from '../../styles/global-layout';
+import { css } from '@emotion/core'
+import styled from '@emotion/styled'
+import { colours, textStyles } from '../../styles/global-layout'
 
 export const OuterLayout = styled.div`
   width: 100%;
   background-color: ${colours.backgroundBlack};
   min-height: 350px;
-`;
+`
 
 
 
@@ -16,7 +16,7 @@ export const ContactWrapper = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   max-width: 400px;
-`;
+`
 
 export const TileWrapper = styled.div`
   color: ${colours.leatherBrown};
@@ -32,10 +32,10 @@ export const TileWrapper = styled.div`
     ${textStyles.navigationText}
     text-decoration: none;
   }
-`;
+`
 
 export const Copyright = styled.p`
   ${textStyles.whiteCopryight}
 
   margin-top: 40px;
-`;
+`

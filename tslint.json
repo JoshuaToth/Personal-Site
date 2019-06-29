@@ -5,6 +5,8 @@
         "no-consecutive-blank-lines": false,
         "max-line-length": {
             "options": [120]
-        }
+        },
+        "object-literal-sort-keys": false,
+        "semicolon": [true, "never"]
     }
 }

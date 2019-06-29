@@ -1,5 +1,5 @@
-import { css } from '@emotion/core';
-import styled from '@emotion/styled';
+import { css } from '@emotion/core'
+import styled from '@emotion/styled'
 
 export enum colours {
   backgroundBlack = '#24272a',
@@ -67,7 +67,7 @@ export const textStyles = {
     color: ${colours.subtitleGrey};
     font-family: 'Roboto', sans-serif;
   `,
-};
+}
 
 export const InnerLayout = styled.div`
   max-width: 910px;
@@ -75,7 +75,7 @@ export const InnerLayout = styled.div`
 	margin-right: auto;
 	padding-left: 20px;
 	padding-right: 20px;
-`;
+`
 
 export const GlobalLayout =  styled.div`
 	max-width: 1400px;
@@ -84,40 +84,40 @@ export const GlobalLayout =  styled.div`
 	color: ${colours.textBlack};
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-`;
+`
 
 export const GlobalBack = css`
   body {
     background-color: black;
     margin: 0px;
   }
-`;
+`
 
 export const FirstWord = styled.p`
   ${textStyles.whiteHeader}
   display: inline-block;
   padding-right: 14px;
   margin-bottom: 18px;
-`;
+`
 
 export const SecondWord = styled.p`
   ${textStyles.whiteHeader}
   display: inline-block;
   margin-bottom: 18px;
-`;
+`
 
 export const BorderUnderline = styled.div`
   border-bottom: 4px solid ${colours.leatherBrown};
   width: 135px;
-`;
+`
 
 export const HeaderTextWrapper = styled.div`
   width: 135px;
   margin-bottom: 32px;
   padding-top: 1px;
-`;
+`
 
 export const HeaderText = styled.p`
   ${textStyles.leatherHeader}
   margin-bottom: 18px;
-`;
+`

@@ -1,13 +1,13 @@
-import { ArticleConfig, ButtonType } from './article-card';
+import { ButtonType, IArticleConfig } from './article-card'
 import {
   FreeBirdPhoto,
   GitPhoto,
   IOTPhoto,
   MonolithCirclePhoto,
   ReactPhoto,
-} from './image-queries';
+} from './image-queries'
 
-export const ArticleConfigs: ArticleConfig[] = [
+export const ArticleConfigs: IArticleConfig[] = [
   {
     imgObj: IOTPhoto(),
     articleTitle: 'Building A Serverless IoT FinTech App with AWS and NodeJS',
@@ -74,4 +74,4 @@ export const ArticleConfigs: ArticleConfig[] = [
       'https://medium.com/crowdbotics/a-node-js-serverless-iot-fintech-project-surely-its-not-possible-55a1aaa380da',
     addedOrder: 5,
   },
-];
+]

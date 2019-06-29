@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { BorderUnderline, FirstWord, InnerLayout, SecondWord } from '../../styles/global-layout';
+import React, { Component } from 'react'
+import { BorderUnderline, FirstWord, InnerLayout, SecondWord } from '../../styles/global-layout'
 import {
   ContentWrapper,
   Description,
   ImageWrapper,
-} from './cover.styles';
+} from './cover.styles'
 
-import DisplayPhoto from '../display-photo';
+import DisplayPhoto from '../display-photo'
 
 
 export default class CoverContent extends Component<any> {
@@ -26,6 +26,6 @@ export default class CoverContent extends Component<any> {
           </ImageWrapper>
         </ContentWrapper>
       </InnerLayout>
-    );
+    )
   }
 }

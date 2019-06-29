@@ -1,6 +1,6 @@
-import { graphql, StaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
-import React from 'react';
+import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+import React from 'react'
 
 export const SquareImage = graphql`
   fragment squareImage on File {
@@ -10,7 +10,7 @@ export const SquareImage = graphql`
       }
     }
   }
-`;
+`
 
 const ImageIOT = graphql`
   query {
@@ -30,39 +30,39 @@ const ImageIOT = graphql`
       ...squareImage
     }
   }
-`;
+`
 
 export const IOTPhoto = () => (
   <StaticQuery
     query={ImageIOT}
     render={(data) => <Img fluid={data.iot.childImageSharp.fluid} />}
   />
-);
+)
 
 export const ReactPhoto = () => (
   <StaticQuery
     query={ImageIOT}
     render={(data) => <Img fluid={data.react.childImageSharp.fluid} />}
   />
-);
+)
 
 export const GitPhoto = () => (
   <StaticQuery
     query={ImageIOT}
     render={(data) => <Img fluid={data.git.childImageSharp.fluid} />}
   />
-);
+)
 
 export const FreeBirdPhoto = () => (
   <StaticQuery
     query={ImageIOT}
     render={(data) => <Img fluid={data.freeBird.childImageSharp.fluid} />}
   />
-);
+)
 
 export const MonolithCirclePhoto = () => (
   <StaticQuery
     query={ImageIOT}
     render={(data) => <Img fluid={data.monolithCircle.childImageSharp.fluid} />}
   />
-);
+)

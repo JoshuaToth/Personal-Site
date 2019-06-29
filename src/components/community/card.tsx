@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
-} from '../../styles/global-layout';
-import { CardCopy, CardLayout, CardOuterLayout, Subtitle, Title } from './community.styles';
+} from '../../styles/global-layout'
+import { CardCopy, CardLayout, CardOuterLayout, Subtitle, Title } from './community.styles'
 
-export interface CardProps {
-  imgSrc: any;
-  title: string;
-  subtitle: string;
-  copy: string;
+export interface ICardProps {
+  imgSrc: any
+  title: string
+  subtitle: string
+  copy: string
 }
 
-export default class Card extends Component<CardProps> {
+export default class Card extends Component<ICardProps> {
   public render(): React.ReactNode {
-    const ImgSrc = this.props.imgSrc;
+    const ImgSrc = this.props.imgSrc
     return (
       <CardOuterLayout>
         <Title>
@@ -30,6 +30,6 @@ export default class Card extends Component<CardProps> {
           </CardCopy>
         </CardLayout>
       </CardOuterLayout>
-    );
+    )
   }
 }

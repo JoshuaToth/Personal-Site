@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 // import { Link } from "gatsby"
 
-import { Global } from '@emotion/core';
-import About from '../components/about/about';
-import Article from '../components/article/article';
-import Community from '../components/community/community';
-import Cover from '../components/cover/cover';
-import Layout from '../components/default-components/layout';
-import SEO from '../components/default-components/seo';
-import Footer from '../components/footer/footer';
-import { GlobalBack } from '../styles/global-layout';
+import { Global } from '@emotion/core'
+import About from '../components/about/about'
+import Article from '../components/article/article'
+import Community from '../components/community/community'
+import Cover from '../components/cover/cover'
+import Layout from '../components/default-components/layout'
+import SEO from '../components/default-components/seo'
+import Footer from '../components/footer/footer'
+import { GlobalBack } from '../styles/global-layout'
 
 export default class IndexPage extends Component<any> {
   public render(): React.ReactNode {
@@ -24,6 +24,6 @@ export default class IndexPage extends Component<any> {
         <Community />
         <Footer />
       </Layout>
-    );
+    )
   }
 }

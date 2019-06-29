@@ -1,13 +1,13 @@
-import { css } from '@emotion/core';
-import styled from '@emotion/styled';
-import { colours, GlobalLayout, textStyles } from '../../styles/global-layout';
-import { Size } from './tag';
+import { css } from '@emotion/core'
+import styled from '@emotion/styled'
+import { colours, GlobalLayout, textStyles } from '../../styles/global-layout'
+import { Size } from './tag'
 
 export const OuterLayout = styled.div`
   width: 100%;
   background-color: ${colours.textWhite};
   min-height: 772px;
-`;
+`
 
 export const BodyWrapper = styled.div`
   max-width: 600px;
@@ -19,19 +19,19 @@ export const BodyWrapper = styled.div`
     margin-top: 0px;
     ${textStyles.blackMain}
   }
-`;
+`
 
 export const TagsSection = styled.div`
   max-width: 800px;
   padding-bottom: 20px;
-`;
+`
 
 export const TagsCollection = styled.div`
   display: flex;
   flex-flow: row wrap;
-`;
+`
 
-export const TagWrapper = styled.div`
+export const TagWrapper = styled.div<any>`
   ${textStyles.tagFont};
   display: inline-block;
   margin-top: 20px;
@@ -45,4 +45,4 @@ export const TagWrapper = styled.div`
   padding-left: 30px;
   text-align: center;
   ${(props: any): string => props.size === Size.large ? '' : 'min-width: 58px'};
-`;
+`
