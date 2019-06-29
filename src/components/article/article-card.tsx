@@ -1,18 +1,22 @@
-import React, { Component } from "react"
+import React, { Component } from 'react';
 import {
   ArticleBlurb,
-  ArticleCard, ArticleCover,
+  ArticleCard,
+  ArticleCover,
   ArticleDescription,
-  ArticleTitle, ArticleWrapperAnchor, ArticleWrapperDiv,
+  ArticleTitle,
+  ArticleWrapperAnchor,
+  ArticleWrapperDiv,
   LinkButtonWrapper,
   SplashImage,
-} from "./article.styles"
+} from './article.styles';
 
+// tslint:disable-next-line: no-var-requires
 const ArrowRight = require('../../icons/arrow-right-solid.svg');
 
 export enum ButtonType {
   medium = 'Medium',
-  jjt = 'jjt.dev'
+  jjt = 'jjt.dev',
 }
 
 export interface ArticleConfig {
@@ -29,19 +33,18 @@ export interface ArticleProps extends ArticleConfig {
   currentNumber: number;
 }
 
-
 export default class ArticlePreview extends Component<ArticleProps> {
-  static defaultProps = {
+  public static defaultProps = {
     order: 0,
-    currentNumber: 0
-  }
+    currentNumber: 0,
+  };
 
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
     let focusLevel = this.props.order - this.props.currentNumber;
     const zLevel = focusLevel;
 
-    if (focusLevel < -1) focusLevel = -1;
-    if (focusLevel > 1) focusLevel = 1;
+    if (focusLevel < -1) { focusLevel = -1; }
+    if (focusLevel > 1) { focusLevel = 1; }
 
     const background = Math.abs(focusLevel) > 0;
     return (
@@ -50,31 +53,23 @@ export default class ArticlePreview extends Component<ArticleProps> {
         zLevel={zLevel}
         background={background}
       >
-        {background ? <ArticleCover/> : null}
+        {background ? <ArticleCover /> : null}
         <ArticleWrapperAnchor href={this.props.link} target={'blank'}>
           <ArticleCard>
-            <SplashImage>
-              {this.props.imgObj}
-            </SplashImage>
-            <ArticleDescription
-              background={background}
-            >
-              <ArticleTitle>
-                {this.props.articleTitle}
-              </ArticleTitle>
-              <ArticleBlurb>
-                {this.props.articleBlurb}
-              </ArticleBlurb>
-                <LinkButtonWrapper>
-                  <p>
-                    Read on {this.props.buttonType.toString()}
-                    <ArrowRight/>
-                  </p>
-                </LinkButtonWrapper>
+            <SplashImage>{this.props.imgObj}</SplashImage>
+            <ArticleDescription background={background}>
+              <ArticleTitle>{this.props.articleTitle}</ArticleTitle>
+              <ArticleBlurb>{this.props.articleBlurb}</ArticleBlurb>
+              <LinkButtonWrapper>
+                <p>
+                  Read on {this.props.buttonType.toString()}
+                  <ArrowRight />
+                </p>
+              </LinkButtonWrapper>
             </ArticleDescription>
           </ArticleCard>
         </ArticleWrapperAnchor>
       </ArticleWrapperDiv>
-    )
+    );
   }
 }

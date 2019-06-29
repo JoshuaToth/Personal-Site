@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import { ContactWrapper, Copyright, OuterLayout } from "./footer.styles"
-import { BorderUnderline, FirstWord, InnerLayout, SecondWord } from "../../styles/global-layout"
-import ContactTile from "./contact-tile"
+import React, { Component } from 'react';
+import { BorderUnderline, FirstWord, InnerLayout, SecondWord } from '../../styles/global-layout';
+import ContactTile from './contact-tile';
+import { ContactWrapper, Copyright, OuterLayout } from './footer.styles';
 // import { Link } from "gatsby"
 
 const Twitter = require('../../icons/twitter-brands.svg');
@@ -10,7 +10,7 @@ const Github = require('../../icons/github-brands.svg');
 const Email = require('../../icons/envelope-solid.svg');
 
 export default class Footer extends Component<any> {
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
     return (
       <OuterLayout>
         <InnerLayout>
@@ -41,6 +41,6 @@ export default class Footer extends Component<any> {
           <Copyright>Copyright 2019 Joshua Toth</Copyright>
         </InnerLayout>
       </OuterLayout>
-    )
+    );
   }
 }

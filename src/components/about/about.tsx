@@ -1,12 +1,12 @@
-import React, { Component } from "react"
-import { BodyWrapper, OuterLayout } from "./about.styles"
-import { BorderUnderline, HeaderText, HeaderTextWrapper, InnerLayout, SecondWord } from "../../styles/global-layout"
-import Tags from "./tags"
+import React, { Component } from 'react';
+import { BorderUnderline, HeaderText, HeaderTextWrapper, InnerLayout, SecondWord } from '../../styles/global-layout';
+import { BodyWrapper, OuterLayout } from './about.styles';
+import Tags from './tags';
 // import { Link } from "gatsby"
 
 
 export default class About extends Component<any> {
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
     return (
       <OuterLayout>
         <InnerLayout>
@@ -30,12 +30,12 @@ export default class About extends Component<any> {
             <p>
               Mentor to several junior/intermediate developers
               <br/>Always happy to lend a hand and assist out those seeking help
-              <br/>Developer of <a href={"https://joshuatoth.github.io/SenpaiPathway/"} target="blank">Senpai Pathway</a> The platform to assist mentors focus on helping their mentees by providing problems that can be solved together.
+              <br/>Developer of <a href={'https://joshuatoth.github.io/SenpaiPathway/'} target='blank'>Senpai Pathway</a> The platform to assist mentors focus on helping their mentees by providing problems that can be solved together.
             </p>
           </BodyWrapper>
           <Tags/>
         </InnerLayout>
       </OuterLayout>
-    )
+    );
   }
 }

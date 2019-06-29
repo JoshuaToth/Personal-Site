@@ -1,13 +1,13 @@
-import React, { Component } from "react"
-import { CoverLayout, NavigationWrapper } from "./cover.styles"
-import { InnerLayout } from "../../styles/global-layout"
+import React, { Component } from 'react';
+import { InnerLayout } from '../../styles/global-layout';
+import { CoverLayout, NavigationWrapper } from './cover.styles';
 const Logo = require('../../icons/logo.svg');
 
 // import { Link } from "gatsby"
 
 
 export default class Navigation extends Component<any> {
-  render(): React.ReactNode {
+  public render(): React.ReactNode {
     return (
       <InnerLayout>
         <CoverLayout>
@@ -20,6 +20,6 @@ export default class Navigation extends Component<any> {
           </NavigationWrapper>
         </CoverLayout>
       </InnerLayout>
-    )
+    );
   }
 }

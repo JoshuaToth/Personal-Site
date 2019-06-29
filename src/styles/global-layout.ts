@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import { css } from "@emotion/core"
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 
 export enum colours {
   backgroundBlack = '#24272a',
@@ -10,7 +10,7 @@ export enum colours {
   textBodyBlack = '#191005',
   iconGrey = '#dfdfdf',
   subtitleGrey = '#7c7c7c',
-  subtitleBlack = '#444444'
+  subtitleBlack = '#444444',
 }
 
 export const textStyles = {
@@ -67,7 +67,7 @@ export const textStyles = {
     color: ${colours.subtitleGrey};
     font-family: 'Roboto', sans-serif;
   `,
-}
+};
 
 export const InnerLayout = styled.div`
   max-width: 910px;

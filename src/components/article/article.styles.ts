@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import { colours, textStyles } from "../../styles/global-layout"
+import styled from '@emotion/styled';
+import { colours, textStyles } from '../../styles/global-layout';
 
 export const OuterLayout = styled.div`
   width: 100%;
@@ -31,7 +31,6 @@ export const ChevronWrapper = styled.div`
   }
 `;
 
-
 export const Articles = styled.div`
   justify-content: center;
   position: relative;
@@ -46,23 +45,27 @@ export const ArticleWrapperAnchor = styled.a`
 
 export const ArticleWrapperDiv = styled.div`
   position: absolute;
-  left:  ${(props: any): string => { return `${37 + props.focusLevel * 20}` }}%;
+  left: ${(props: any): string => {
+    return `${37 + props.focusLevel * 20}`;
+  }}%;
   width: 418px;
-  height: ${(props: any): string => props.background ? '528px' : '568px'};
-  overflow: hidden; 
-  z-index: ${(props: any): string => { return `${100 - Math.abs(props.zLevel) * 10}` }};
+  height: ${(props: any): string => (props.background ? '528px' : '568px')};
+  overflow: hidden;
+  z-index: ${(props: any): string => {
+    return `${100 - Math.abs(props.zLevel) * 10}`;
+  }};
   margin-right: -130px;
   margin-left: -130px;
-  top: ${(props: any): string => props.background ? '68px' : '48px'};
-  box-shadow: 2px 2px 12px 2px rgba(0,0,0,0.82);
+  top: ${(props: any): string => (props.background ? '68px' : '48px')};
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.82);
   transition: all 0.2s ease-out;
 `;
 
-export const ArticleCover  = styled.div`
+export const ArticleCover = styled.div`
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   z-index: 99;
 `;
@@ -84,9 +87,8 @@ export const ArticleDescription = styled.div`
   width: 362px;
   height: 233px;
   background-color: ${colours.textWhite};
-  padding: ${(props: any): string => props.background 
-  ? '10px 28px 10px 28px' 
-  : '28px 28px 20px 28px'};
+  padding: ${(props: any): string =>
+    props.background ? '10px 28px 10px 28px' : '28px 28px 20px 28px'};
   position: relative;
   transition: all 0.2s ease;
 `;

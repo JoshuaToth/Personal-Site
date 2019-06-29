@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
-import { css } from "@emotion/core"
-import { colours, GlobalLayout, textStyles } from "../../styles/global-layout"
-import { Size } from "./tag"
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+import { colours, GlobalLayout, textStyles } from '../../styles/global-layout';
+import { Size } from './tag';
 
 export const OuterLayout = styled.div`
   width: 100%;
@@ -45,4 +45,4 @@ export const TagWrapper = styled.div`
   padding-left: 30px;
   text-align: center;
   ${(props: any): string => props.size === Size.large ? '' : 'min-width: 58px'};
-`
+`;

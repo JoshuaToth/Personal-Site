@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
-import { css } from "@emotion/core"
-import { colours, textStyles } from "../../styles/global-layout"
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+import { colours, textStyles } from '../../styles/global-layout';
 
 export const OuterLayout = styled.div`
   width: 100%;

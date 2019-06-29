@@ -1,11 +1,11 @@
-import React, { Component } from "react"
-import { BodyWrapper, HeaderText, HeaderTextWrapper, OuterLayout, TagWrapper } from "./about.styles"
-import { InnerLayout } from "../../styles/global-layout"
+import React, { Component } from 'react';
+import { InnerLayout } from '../../styles/global-layout';
+import { BodyWrapper, HeaderText, HeaderTextWrapper, OuterLayout, TagWrapper } from './about.styles';
 // import { Link } from "gatsby"
 
 export enum Size {
   large,
-  small
+  small,
 }
 
 export const SkillTag = (copy: string, size: Size = Size.small): JSX.Element => {
@@ -15,5 +15,5 @@ export const SkillTag = (copy: string, size: Size = Size.small): JSX.Element => 
       >
         {copy}
       </TagWrapper>
-    )
-}
+    );
+};
