@@ -20,7 +20,7 @@ const Email = require('../../icons/envelope-solid.svg')
 export default class Footer extends Component<any> {
   public render(): React.ReactNode {
     return (
-      <OuterLayout>
+      <OuterLayout id='footer'>
         <InnerLayout>
           <FirstWord>Contact</FirstWord>
           <BorderUnderline />

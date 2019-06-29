@@ -32,6 +32,10 @@ export const TileWrapper = styled.div`
     ${textStyles.navigationText}
     text-decoration: none;
   }
+  > a:hover {
+    color: ${colours.leatherBrown};
+    transition: color 0.5s;
+  }
 `
 
 export const Copyright = styled.p`

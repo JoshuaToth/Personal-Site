@@ -1,6 +1,5 @@
-import { css } from '@emotion/core'
 import styled from '@emotion/styled'
-import { colours, GlobalLayout, textStyles } from '../../styles/global-layout'
+import { colours, textStyles } from '../../styles/global-layout'
 
 export const OuterLayout = styled.div`
   width: 100%;
@@ -21,9 +20,18 @@ export const CoverLayout = styled.div`
 `
 
 export const NavigationWrapper = styled.div`
-  > p {
+  > a {
     display: inline-block;
     margin-left: 30px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  > a:hover {
+    color: ${colours.leatherBrown} !important;
+    transition: color 0.5s;
+  }
+  > a:visited {
+    color: ${colours.textWhite};
   }
 `
 

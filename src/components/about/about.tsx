@@ -13,7 +13,7 @@ import Tags from './tags'
 export default class About extends Component<any> {
   public render(): React.ReactNode {
     return (
-      <OuterLayout>
+      <OuterLayout id='about'>
         <InnerLayout>
           <HeaderTextWrapper>
             <HeaderText>About</HeaderText>

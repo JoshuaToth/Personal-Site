@@ -53,7 +53,7 @@ export default class Article extends Component<
 
   public render(): React.ReactNode {
     return (
-      <OuterLayout>
+      <OuterLayout id='articles'>
         <InnerLayout>
           <FirstWord>Latest</FirstWord>
           <SecondWord>Articles</SecondWord>

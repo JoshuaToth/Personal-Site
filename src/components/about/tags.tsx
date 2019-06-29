@@ -15,12 +15,14 @@ export default class Tags extends Component<any> {
         </TagsCollection>
         <TagsCollection>
           {SkillTag('.Net')}
+          {SkillTag('GraphQL')}
           {SkillTag('Javascript')}
           {SkillTag('Typescript')}
           {SkillTag('Lambda')}
           {SkillTag('Terraform')}
           {SkillTag('Microservices')}
           {SkillTag('Docker')}
+          {SkillTag('Elasticsearch')}
         </TagsCollection>
       </TagsSection>
     )

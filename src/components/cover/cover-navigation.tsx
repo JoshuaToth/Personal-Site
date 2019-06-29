@@ -11,10 +11,10 @@ export default class Navigation extends Component<any> {
         <CoverLayout>
           <Logo />
           <NavigationWrapper>
-            <p>About</p>
-            <p>Articles</p>
-            <p>Community</p>
-            <p>Contact</p>
+            <a href='#about'>About</a>
+            <a href='#articles'>Articles</a>
+            <a href='#community'>Community</a>
+            <a href='#footer'>Contact</a>
           </NavigationWrapper>
         </CoverLayout>
       </InnerLayout>
