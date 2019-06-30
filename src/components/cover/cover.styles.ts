@@ -25,6 +25,7 @@ export const NavigationWrapper = styled.div`
     margin-left: 30px;
     cursor: pointer;
     text-decoration: none;
+    color: ${colours.textWhite};
   }
   > a:hover {
     color: ${colours.leatherBrown} !important;

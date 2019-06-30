@@ -1,5 +1,5 @@
 import { ButtonType, IArticleConfig } from './article-card'
-import { FreeBirdPhoto } from './image-queries'
+import { FreeBirdPhoto } from './photos/free-bird'
 import { GitPhoto } from './photos/GitPhoto'
 import { IOTPhoto } from './photos/IOTPhoto'
 import { MonolithCirclePhoto } from './photos/MonolithCirclePhoto'

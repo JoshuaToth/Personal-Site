@@ -43,8 +43,12 @@ export default class ArticlePreview extends Component<IArticleProps> {
     let focusLevel = this.props.order - this.props.currentNumber
     const zLevel = focusLevel
 
-    if (focusLevel < -1) { focusLevel = -1 }
-    if (focusLevel > 1) { focusLevel = 1 }
+    if (focusLevel < -1) {
+      focusLevel = -1
+    }
+    if (focusLevel > 1) {
+      focusLevel = 1
+    }
 
     const background = Math.abs(focusLevel) > 0
     return (

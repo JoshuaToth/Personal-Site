@@ -4,7 +4,7 @@ import React from 'react'
 
 export const ImageIOT = graphql`
   query {
-    react: file(relativePath: { eq: "react-cover.png" }) {
+    freeBird: file(relativePath: { eq: "free-bird.png" }) {
       childImageSharp {
         fluid(maxWidth: 418, maxHeight: 280) {
           ...GatsbyImageSharpFluid
@@ -14,9 +14,9 @@ export const ImageIOT = graphql`
   }
 `
 
-export const ReactPhoto = () => (
+export const FreeBirdPhoto = () => (
   <StaticQuery
     query={ImageIOT}
-    render={(data) => <Img fluid={data.react.childImageSharp.fluid} />}
+    render={(data) => <Img fluid={data.freeBird.childImageSharp.fluid} />}
   />
 )
