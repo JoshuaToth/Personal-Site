@@ -17,7 +17,11 @@ export default class IndexPage extends Component<any> {
       <Layout>
         <Global styles={GlobalBack} />
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet'/>
-        <SEO title='Home' keywords={['gatsby', 'application', 'react']} />
+        <SEO
+          title='Home'
+          keywords={['joshuatoth', 'joshua', 'toth', 'application', 'react']}
+          description={'Fullstack Software Developer Based in London'}
+        />
         <Cover />
         <About />
         <Article />
