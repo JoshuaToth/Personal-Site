@@ -43,7 +43,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "lint": "tslint 'src/**/*.ts?(x)' --fix && tsc",
-    "release": "gatsby build && cp -rf ./public/ ./release/"
+    "release": "gatsby build && cp -rf ./public/ ./docs/"
   },
   "repository": {
     "type": "git",
