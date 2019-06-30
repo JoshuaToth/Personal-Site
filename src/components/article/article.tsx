@@ -13,7 +13,6 @@ import {
   ChevronWrapper,
   OuterLayout,
 } from './article.styles'
-import { IOTPhoto } from './image-queries'
 
 // tslint:disable-next-line: no-var-requires
 const ChevronRight = require('../../icons/chevron-right-solid.svg')
