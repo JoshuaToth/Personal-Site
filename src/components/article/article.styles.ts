@@ -50,7 +50,7 @@ export const ArticleWrapperDiv = styled.div<any>`
   }}%;
   width: 418px;
   height: ${(props: any): string => (props.background ? '528px' : '568px')};
-  overflow: hidden;
+  overflow: auto;
   z-index: ${(props: any): string => {
     return `${100 - Math.abs(props.zLevel) * 10}`
   }};
@@ -59,6 +59,9 @@ export const ArticleWrapperDiv = styled.div<any>`
   top: ${(props: any): string => (props.background ? '68px' : '48px')};
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.82);
   transition: all 0.2s ease-out;
+  @media (max-width: 768px){
+    max-width: 350px;
+  }
 `
 
 export const ArticleCover = styled.div`
@@ -71,20 +74,22 @@ export const ArticleCover = styled.div`
 `
 
 export const ArticleCard = styled.div`
-  width: 418px;
+  width: 100%;
   height: 568px;
   border-radius: 4px;
   background-color: ${colours.textWhite};
-  overflow: hidden;
+  overflow: auto;
+  @media only screen (max-width: 768px){
+    max-width: 300px;
+  }
 `
 
 export const SplashImage = styled.div`
-  width: 418px;
+  width: 100%;
   height: 281px;
 `
 
 export const ArticleDescription = styled.div<any>`
-  width: 362px;
   height: 233px;
   background-color: ${colours.textWhite};
   padding: ${(props: any): string =>
@@ -103,7 +108,7 @@ export const ArticleTitle = styled.p`
 export const ArticleBlurb = styled.p`
   ${textStyles.greyArticleSubtitle}
   height: 63px;
-  overflow: hidden;
+  overflow: auto;
   text-overflow: ellipsis;
   margin-top: 0px;
 `

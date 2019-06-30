@@ -4,7 +4,7 @@ import { colours, textStyles } from '../../styles/global-layout'
 export const OuterLayout = styled.div`
   width: 100%;
   background-color: ${colours.textWhite};
-  min-height: 1600px;
+  min-height: 1650px;
 `
 
 export const CardOuterLayout = styled.div``
