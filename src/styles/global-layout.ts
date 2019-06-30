@@ -93,14 +93,14 @@ export const GlobalBack = css`
   }
 `
 
-export const FirstWord = styled.p`
+export const FirstWord = styled.h1`
   ${textStyles.whiteHeader}
   display: inline-block;
   padding-right: 14px;
   margin-bottom: 18px;
 `
 
-export const SecondWord = styled.p`
+export const SecondWord = styled.h1`
   ${textStyles.whiteHeader}
   display: inline-block;
   margin-bottom: 18px;
