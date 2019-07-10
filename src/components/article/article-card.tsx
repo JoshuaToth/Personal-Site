@@ -63,7 +63,10 @@ export default class ArticlePreview extends Component<IArticleProps> {
             <SplashImage>{this.props.imgObj}</SplashImage>
             <ArticleDescription background={background}>
               <ArticleTitle>{this.props.articleTitle}</ArticleTitle>
-              <ArticleBlurb>{this.props.articleBlurb}</ArticleBlurb>
+              <ArticleBlurb>
+                {this.props.articleBlurb.slice(0, 100)}
+                {this.props.articleBlurb.slice(0, 100).length === 100 ? '...' : ''}
+              </ArticleBlurb>
               <LinkButtonWrapper>
                 <p>
                   Read on {this.props.buttonType.toString()}
