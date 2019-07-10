@@ -112,7 +112,7 @@ export const ArticleTitle = styled.p`
 export const ArticleBlurb = styled.p`
   ${textStyles.greyArticleSubtitle}
   height: 63px;
-  overflow: auto;
+  overflow: hidden;
   margin-top: 0px;
 `
 
