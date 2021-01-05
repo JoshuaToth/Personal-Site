@@ -1,17 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Joshua Toth. Personal website`,
-    description: `A website where I host content on myself and topics I'm interested in`,
-    author: `@joshuatoth`,
+    title: `Joshua Toth`,
+    description: `The personal website for software developer Joshua Toth, based in London United Kingdom and Melbourne Australia`,
+    author: `Joshua Toth`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-typescript`,
-      options: {
-        isTSX: true, // defa ults to false
-        allExtensions: true, // defaults to false
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,25 +14,25 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    {
-      resolve: 'gatsby-plugin-react-svg',
-      options: {
-        rule: {
-          include: `${__dirname}/src/icons`
-        }
-      }
-    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `joshua-toth`,
+        short_name: `joshuatoth`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/icons/logo.svg`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `${__dirname}/src/icons`,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
