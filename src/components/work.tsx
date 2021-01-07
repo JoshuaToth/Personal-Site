@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 
 import styles from './styles/work.module.css'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
 const Hnb = require('../icons/hnb.svg')
@@ -77,13 +77,13 @@ const WorkPlacement = ({ workplace, i }) => {
       }
       ref={myRef}
     >
-      <a href={workplace.href} target="_blank" className={styles.image}>
+      <Link to={workplace.href} target="_blank" className={styles.image}>
         <Imgaa />
-      </a>
+      </Link>
       <div className={styles.details}>
-        <a href={workplace.href} target="_blank">
+        <Link to={workplace.href} target="_blank">
           <h3>{workplace.workplace}</h3>
-        </a>
+        </Link>
         <p>{workplace.role}</p>
         <div className={styles.workArea}>
           <div>

@@ -42,25 +42,25 @@ const Header = ({ siteTitle }) => {
           ref={nameRef}
           className={`${headerStyle.headerH1} ${headerStyle.hide}`}
         >
-          <a href="#intro" className={headerStyle.link}>
+          <Link to="#intro" className={headerStyle.link}>
             {siteTitle}
-          </a>
+          </Link>
         </h1>
         <ul>
           <li>
-            <a href="#work" className={headerStyle.link}>
+            <Link to="#work" className={headerStyle.link}>
               Work
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#extras" className={headerStyle.link}>
+            <Link to="#extras" className={headerStyle.link}>
               extras
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" className={headerStyle.link}>
+            <Link to="#contact" className={headerStyle.link}>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

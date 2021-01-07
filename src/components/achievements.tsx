@@ -8,6 +8,7 @@ import { AltNetImage } from '../images/AltNetImage'
 import { DDDPresent } from '../images/DDDImage'
 
 import './styles/carousel-overs.css'
+import { Link } from 'gatsby'
 
 interface Ach {
   title: string
@@ -85,12 +86,12 @@ export const Achievements = () => (
               <p>{ach.description}</p>
             </div>
             <div className={styles.right}>
-              <a
-                href={ach.href}
+              <Link
+                to={ach.href}
                 target={!ach.href?.includes('') ? '_blank' : undefined}
               >
                 <Imaage />
-              </a>
+              </Link>
             </div>
           </div>
         )

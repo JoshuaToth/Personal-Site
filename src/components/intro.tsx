@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
 import React from 'react'
 
 import styles from './styles/intro.module.css'
@@ -53,27 +53,27 @@ export const Intro = () => (
           the challenges each one presents.
         </h3>
         <h3>Considering work worldwide.</h3>
-        <a href="https://medium.com/@tothjoshuaj" target="_blank">
+        <Link to="https://medium.com/@tothjoshuaj" target="_blank">
           <h3>I also publish articles.</h3>
-        </a>
+        </Link>
       </div>
       <div className={styles.right}>
         <div className={styles.displayPhoto}>
           <DP />
         </div>
         <div className={styles.icons}>
-          <a href="https://github.com/JoshuaToth" target="_blank">
+          <Link to="https://github.com/JoshuaToth" target="_blank">
             <Github />
-          </a>
-          <a href="https://medium.com/@tothjoshuaj" target="_blank">
+          </Link>
+          <Link to="https://medium.com/@tothjoshuaj" target="_blank">
             <Medium />
-          </a>
+          </Link>
           <a href="mailto:josh@jjt.dev" target="_blank">
             <Email />
           </a>
-          <a href="https://twitter.com/TothJoshuaJ" target="_blank">
+          <Link to="https://twitter.com/TothJoshuaJ" target="_blank">
             <Twitter />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

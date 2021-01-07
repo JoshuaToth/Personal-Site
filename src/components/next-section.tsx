@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React, { useCallback, useEffect, useState } from 'react'
 
 import styles from './styles/next-section.module.css'
@@ -26,10 +27,10 @@ export const NextSection = ({ href, sectionName }) => {
       {hidden ? (
         <></>
       ) : (
-        <a href={href}>
+        <Link to={href}>
           <ArrowDown />
           <p>{sectionName}</p>
-        </a>
+        </Link>
       )}
     </div>
   )
