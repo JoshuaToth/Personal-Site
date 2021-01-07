@@ -35,7 +35,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "release": "gatsby build && cp -rf ./public/ ./docs/ && cp CNAME ./docs/."
+    "release": "rm -rf ./docs/ && gatsby build && cp -rf ./public/ ./docs/ && cp CNAME ./docs/."
   },
   "repository": {
     "type": "git",
