@@ -54,7 +54,6 @@ const WorkPlacement = ({ workplace, i }) => {
     if (!currentObserver) {
       observer.current = new window.IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
-          console.log(myRef)
           myRef.current.classList.add(styles.appear)
           const { current: currentObserver } = observer
           currentObserver.disconnect()
