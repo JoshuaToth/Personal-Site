@@ -22,7 +22,7 @@ const achs: Ach[] = [
   {
     title: 'Complete my 5th Contract',
     timeframe: '2018 - 2021',
-    description: `Unearthing myself from a comfortable, fun, challenging job that felt like home was tough! I wanted to put myself out there and give contracting a shot. I had no idea if moving to London to contract to would work out or not. I thought I had what it took and I was out to prove myself. Thankfully it did and I was able to complete five total contracts! All were intentionally short to mid term, I wanted to make sure I didn't get too comfortable anywhere!`,
+    description: `Unearthing myself from a comfortable, fun, challenging job that felt like home was tough! I wanted to put myself out there and give contracting a shot. I had no idea if moving to London to contract to would work out or not. I thought I had what it took and I was out to prove myself. Thankfully it did and I was able to complete five total contracts! All were intentionally short to mid term, I wanted to make sure I didn't get too comfortable anywhere.`,
     image: LondonImage,
     href: '#work',
     thumbnailText: 'Contracting',

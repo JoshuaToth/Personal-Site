@@ -70,4 +70,26 @@
   .intro {
     padding-top: 48px;
   }
+
+  .left h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .left h1 {
+    font-size: 2.5rem;
+  }
+  .left h3 {
+    font-size: 1.2rem;
+  }
+
+  .left {
+    padding-top: 10px;
+  }
+
+  .intro {
+    padding-top: 100px;
+  }
 }

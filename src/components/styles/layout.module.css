@@ -41,7 +41,7 @@
 }
 
 .layoutBackgroundPurple {
-  background: linear-gradient(180deg, #da4453, #89216b);
+  background: linear-gradient(to top,  #8a2387, #e94057, #f27121); 
   background-attachment: fixed;
   transition-delay: 1s;
   transition: all 2s ease-in-out;
