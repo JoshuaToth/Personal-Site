@@ -53,7 +53,7 @@ export const Intro = () => (
           the challenges each one presents.
         </h3>
         <h3>Considering work worldwide.</h3>
-        <Link to="https://medium.com/@tothjoshuaj" target="_blank">
+        <Link to="https://medium.com/@joshua-toth" target="_blank">
           <h3>I also publish articles.</h3>
         </Link>
       </div>
@@ -65,7 +65,7 @@ export const Intro = () => (
           <Link to="https://github.com/JoshuaToth" target="_blank">
             <Github />
           </Link>
-          <Link to="https://medium.com/@tothjoshuaj" target="_blank">
+          <Link to="https://medium.com/@joshua-toth" target="_blank">
             <Medium />
           </Link>
           <a href="mailto:josh@jjt.dev" target="_blank">

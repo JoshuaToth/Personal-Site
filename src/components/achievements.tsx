@@ -30,7 +30,7 @@ const achs: Ach[] = [
   },
   {
     title: 'Win my first public hackathon',
-    timeframe: 'BGC Digital Ventures, 2019',
+    timeframe: 'BCG Digital Ventures, 2019',
     description:
       'Utilising my idea, my 3 teammates and I worked tirelessly to produce AskPaul: A communication framework targeting youth on the verge of homelessness. By considering the needs and symptoms of unprepared homelessness, we were able to target a massive problem area. The solution we produced was intentionally branded to be un-accusatory and intended to be used by those who do not consider themselves homeless.',
     image: HackathonImage,

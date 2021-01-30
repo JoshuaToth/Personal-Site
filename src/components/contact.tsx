@@ -17,7 +17,7 @@ export const Contact = () => (
     <Link to="https://twitter.com/TothJoshuaJ" target="_blank">
       Twitter
     </Link>
-    <Link to="https://medium.com/@tothjoshuaj" target="_blank">
+    <Link to="https://medium.com/@joshua-toth" target="_blank">
       Medium
     </Link>
 
