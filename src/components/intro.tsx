@@ -43,16 +43,10 @@ export const Intro = () => (
     <div className={styles.intro}>
       <div className={styles.left}>
         <h1>Joshua Toth</h1>
-        <h2>Full stack developer</h2>
         <h3>
-          A passionate techie who’s spent the last couple of years exploring the
-          incredible London tech scene. <br /> <br /> My next adventure is a
-          return to my home city of Melbourne where I’m on the lookout for an
-          inspiring, challenging and exciting workplace to make a serious impact
-          from within. I love working with different technologies and tackling
-          the challenges each one presents.
+          A passionate techie based out of Melbourne currently working as a
+          Prototyping Engineer at Amazon Web Services.
         </h3>
-        <h3>Considering work worldwide.</h3>
         <Link to="https://medium.com/@joshua-toth" target="_blank">
           <h3>I also publish articles.</h3>
         </Link>
