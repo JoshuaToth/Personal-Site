@@ -19,16 +19,19 @@ const year = date.getFullYear();
           ))
         }
       </ul>
-      <div class="flex flex-start items-start gap-4 w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          class="zag-fill zag-transition w-8 h-8 min-h-8 min-w-8 max-h-8 max-w-8 -translate-y-2"
-          ><path fill="currentColor" d="m10 7l-2 4h3v6H5v-6l2-4zm8 0l-2 4h3v6h-6v-6l2-4z"></path></svg
-        >
-        <p id="quote" class="zag-text zag-transition"></p>
+      <div class="flex flex-start flex-col items-start gap-4 w-full">
+        <div class="flex flex-start items-start gap-4 w-full">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            class="zag-fill zag-transition w-8 h-8 min-h-8 min-w-8 max-h-8 max-w-8 -translate-y-2"
+            ><path fill="currentColor" d="m10 7l-2 4h3v6H5v-6l2-4zm8 0l-2 4h3v6h-6v-6l2-4z"></path></svg
+          >
+          <p id="quote" class="zag-text zag-transition"></p>
+        </div>
+        <p id="source" class="zag-text zag-transition"></p>
       </div>
       <div class="flex flex-row sm:flex-col gap-4">
         {
@@ -154,4 +157,6 @@ const year = date.getFullYear();
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const randomQuote = quotes[randomIndex];
   quoteElement!.textContent = randomQuote.quote;
+  const sourceElement = document.getElementById('source');
+  sourceElement!.textContent = `\n - ${randomQuote.source}`;
 </script>
